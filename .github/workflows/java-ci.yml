@@ -18,8 +18,6 @@ jobs:
       - name: Build with Maven
         run: |
           mvn install
-          -Dmaven.test.skip=true
-          -Dmaven.javadoc.skip=true
           --batch-mode
           --show-version
           --file duo-client/pom.xml
