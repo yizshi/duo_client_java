@@ -17,11 +17,11 @@ jobs:
           java-version: ${{ matrix.java }}
       - name: Build with Maven
         run: |
-          mvn install |
-          --define "skipTests=true" |
-          --define "mavin.javadoc.skip=true" |
-          --batch-mode |
-          --show-version |
+          mvn install >
+          --define "skipTests=true" >
+          --define "mavin.javadoc.skip=true" >
+          --batch-mode >
+          --show-version >
           --file duo-client/pom.xml
       - name: Test with Maven
         run: |
